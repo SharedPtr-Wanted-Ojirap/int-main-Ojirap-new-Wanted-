@@ -1,2 +1,20 @@
 # int-main-Ojirap-new-Wanted-
-저희 활동을 올릴 main Repo 입니다.
+
+```cpp
+#include <memory>
+#include <vector>
+#include "Wanted_UE2nd.h"
+
+// main Repo 입니다.
+int main() 
+{   
+    std::shared_ptr<Wanted> Ojirap = new std::make_shared<Wanted>("지식");
+
+    for (Wanted* Ojirapper : SmartMembers)
+    {
+        Ojirapper = Ojirap.Get();
+    }
+
+    return 0;
+}
+```
